@@ -1,0 +1,37 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(232, 232, 232);
+}
+
+  /* For WebKit browsers (Chrome, Safari) */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888 transparent;
+    border-radius: 6px;
+  }
+  
+  /* For Firefox */
+  /* Note: The scrollbar styling for Firefox is currently only supported in Firefox Nightly versions. */
+  /* You may need to use JavaScript or a library for cross-browser compatibility. */
+  * {
+    scrollbar-color: #888 transparent;
+    scrollbar-width: thin;
+  }
+  
+  /* For Microsoft Edge and IE */
+  /* Note: The scrollbar styling for Edge and IE is currently only supported in EdgeHTML 18+. */
+  /* You may need to use JavaScript or a library for cross-browser compatibility. */
+  * {
+    scrollbar-face-color: #ddd;
+    scrollbar-shadow-color: #eee;
+    scrollbar-highlight-color: #eee;
+    scrollbar-3dlight-color: #eee;
+    scrollbar-darkshadow-color: #ddd;
+    scrollbar-track-color: #f8f8f8;
+  }
