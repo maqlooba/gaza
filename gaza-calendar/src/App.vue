@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <header className="App-header">
+        <h1 className="main-header">Gaza Calendar</h1>
+      </header>
     <CalendarComponent @dateSelected="handleDateSelect" />
     <!-- Conditionally render YouTube or Instagram modal based on the link type -->
     <YoutubeModal v-if="showModal && modalType === 'youtube'" :videoUrl="selectedContentUrl" @close="closeModal" />
