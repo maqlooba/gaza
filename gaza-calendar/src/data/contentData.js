@@ -63,9 +63,17 @@ const contentData = {
       type: 'instagram',
       url: 'https://www.instagram.com/p/CzluQ4Cs4kN/'
     },  
+    '2023-11-15': {
+      type: 'instagram',
+      url: 'https://www.instagram.com/p/CzrRrgoOJ27/'
+    },  
     '2023-12-03': {
       type: 'instagram',
       url: 'https://www.instagram.com/reel/C0Z8UW7rh0Z/'
+    },
+    '2023-12-07': {
+      type: 'instagram',
+      url: 'https://www.instagram.com/p/C0jgh2lO7Bc/'
     },
     '2023-12-13': {
       type: 'instagram',

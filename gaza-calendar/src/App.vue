@@ -1,12 +1,24 @@
 <template>
   <div id="app">
-    <header className="App-header">
-        <h1 className="main-header">Gaza Calendar</h1>
-      </header>
-    <CalendarComponent @dateSelected="handleDateSelect" />
+    <header class="App-header">
+      <h1 class="main-header">Gaza Calendar</h1>
+    </header>
+    <!-- Pass contentData to CalendarComponent -->
+    <CalendarComponent 
+      @dateSelected="handleDateSelect" 
+      :contentData="contentData"
+    />
     <!-- Conditionally render YouTube or Instagram modal based on the link type -->
-    <YoutubeModal v-if="showModal && modalType === 'youtube'" :videoUrl="selectedContentUrl" @close="closeModal" />
-    <InstagramModal v-if="showModal && modalType === 'instagram'" :postUrl="selectedContentUrl" @close="closeModal" />
+    <YoutubeModal 
+      v-if="showModal && modalType === 'youtube'" 
+      :videoUrl="selectedContentUrl" 
+      @close="closeModal" 
+    />
+    <InstagramModal 
+      v-if="showModal && modalType === 'instagram'" 
+      :postUrl="selectedContentUrl" 
+      @close="closeModal" 
+    />
   </div>
 </template>
 
@@ -21,17 +33,18 @@ export default {
     CalendarComponent,
     InstagramModal,
     YoutubeModal
-},
+  },
   data() {
     return {
       showModal: false,
       modalType: '',
-      selectedContentUrl: ''
+      selectedContentUrl: '',
+      contentData: contentData
     };
   },
   methods: {
     handleDateSelect(date) {
-      const content = contentData[date];
+      const content = this.contentData[date];
       if (content) {
         this.selectedContentUrl = content.url;
         this.modalType = content.type;

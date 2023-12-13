@@ -62,29 +62,28 @@
   }
 }
 
-.vc-day.future {
+.vc-day.shake {
+  background-image: url('/public/patterns/pattern0.png');
+  /*important*/
+  --shadow-color: #99000038;
+  cursor: pointer;
+  animation: shake 0.5s ease-in-out;
+}
+
+.vc-day.missing {
   background-image: url('/public/patterns/pattern0.png');
   /*important*/
   --shadow-color: #99000038;
   cursor: pointer;
 }
 
-.vc-day.past-or-today {
+.vc-day.filled {
   background-image: url('/public/patterns/pattern0.png');
   /*important*/
   --shadow-color: rgba(59, 125, 79, 0.219);
   cursor: pointer;
 }
 
-/* This will ensure that if neither class is present, no background image is set */
-.vc-day:not(.future):not(.past-or-today) {
-  background-image: none;
-}
-
-
-.vc-day.shake {
-  animation: shake 0.5s ease-in-out;
-}
 
 @keyframes shake {
   0% {
