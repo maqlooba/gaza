@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header class="App-header">
-      <h1 class="main-header">Gaza Calendar</h1>
+      <h1 class="main-header">Day in Palestine</h1>
     </header>
     <!-- Pass contentData to CalendarComponent -->
     <CalendarComponent 
