@@ -27,6 +27,10 @@ const contentData = {
       type: 'instagram',
       url: 'https://www.instagram.com/reel/CyQiJPcMnuO/'
     },  
+    '2023-10-13': {
+      type: 'instagram',
+      url: 'https://www.instagram.com/p/CyWmFVMgEsk/'
+    },  
     '2023-10-16': {
       type: 'instagram',
       url: 'https://www.instagram.com/reel/CydYF9ZMeNq/'
@@ -40,20 +44,32 @@ const contentData = {
       url: 'https://www.instagram.com/p/CywjCJlIHOR/'
     },
     '2023-11-01': {
-      type: 'youtube',
-      url: 'https://www.youtube.com/embed/rqjO5Z9Lt_M/'
+      type: 'instagram',
+      url: 'https://www.instagram.com/p/CzHAKiDs8h1/'
     },  
     '2023-11-07': {
       type: 'youtube',
       url: 'https://www.youtube.com/embed/gk7iWgCk14U/'
     },  
+    '2023-11-11': {
+      type: 'instagram',
+      url: 'https://www.instagram.com/p/Czg5_LqL5nc/'
+    },  
     '2023-11-12': {
       type: 'youtube',
       url: 'https://www.youtube.com/embed/xE0UAP8EGEc/'
     },
+    '2023-11-13': {
+      type: 'instagram',
+      url: 'https://www.instagram.com/p/CzluQ4Cs4kN/'
+    },  
     '2023-12-03': {
       type: 'instagram',
-      url: 'https://www.instagram.com/reel/C0Z8UW7rh0Z'
+      url: 'https://www.instagram.com/reel/C0Z8UW7rh0Z/'
+    },
+    '2023-12-13': {
+      type: 'instagram',
+      url: 'https://www.instagram.com/p/C0zHRA4uRVF/'
     },
   };
   
